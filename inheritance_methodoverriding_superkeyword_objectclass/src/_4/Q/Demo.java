@@ -20,8 +20,10 @@ public class Demo {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("axis bank details......................");
 		AxisBank bank1= (AxisBank)  Demo.getBank("axis");
+		System.out.println("enter branch name: ");
 		bank1.branchName=sc.next();
-		bank1.ifscCode="BANK8755";
+		System.out.println("enter ifsc code: ");
+		bank1.ifscCode=sc.next();
 		bank1.rateOfInterest=5.5;
 		bank1.displayDetails();
 		bank1.getCreditCard();
@@ -29,8 +31,10 @@ public class Demo {
 		//icicibank object
 		System.out.println("icici bank details......................");
 		ICICIBank bank2=(ICICIBank) Demo.getBank("icici");
-		bank2.branchName="raipur";
-		bank2.ifscCode="BANK7875451661";
+		System.out.println("enter branch name: ");
+		bank2.branchName=sc.next();
+		System.out.println("enter ifsc code: ");
+		bank2.ifscCode=sc.next();
 		bank2.rateOfInterest=8.6;
 		bank2.displayDetails();
 		
