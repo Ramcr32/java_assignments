@@ -1,0 +1,32 @@
+Q3) Explain abstract class and interface with an example.
+
+answer: using interface achieve fully abstraction and 
+using abstract class achieve 0 to 100% abstraction 
+interface supports multiple inheritance but abstract class does not
+in interface use can implement method with defalut and static method body
+(onward 1.8 java). 
+abstract class does not have any meaning without his child class. 
+both are generate .class file.
+interface method are bydefault public and abstract.
+interface's static method is called by only itself, meanwhile 
+static method does not participate in inheritace.
+//abstract class
+public abstract class A{
+	public abstract void fun1();
+	public abstract void fun2();
+}
+public class B extends A{
+	public void fun1(){//overriden method
+	}
+	public void fun2(){//overriden method
+	}
+}
+//interface
+public interface A{
+	void fun1();
+	void fun2();
+}
+public class B implement A{
+	void fun1(){}
+	void fun2(){}
+}
