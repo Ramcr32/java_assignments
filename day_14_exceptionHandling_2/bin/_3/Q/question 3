@@ -1,0 +1,19 @@
+Q3) Explain Finally and Final Keyword with an Example?
+
+finally keyword is use with try catch block and final keyword is use whenever we want to constant or 
+fix any variable or method value ;
+finally keyword is use when any statement is very important for realize but in case exception occure 
+before reaching thats statement then compiler not reach to that statement thats why we use finally 
+block to execute thats statement because finally block execute. 
+
+
+class A{
+		final int a=10;
+		try{
+		}
+		catch{
+		
+		}
+		finally{
+		}
+}
